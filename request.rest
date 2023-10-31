@@ -1,0 +1,28 @@
+get http://localhost:3003/cars
+###
+
+post http://localhost:3003/cars
+Content-Type: application/json
+
+{
+    "id": "c003",
+    "model": "Compass",
+    "color": "branco blaze",
+    "year": 2022
+}
+###
+
+put http://localhost:3003/cars/c002
+Content-Type: application/json
+
+{
+    "id": "c002",
+    "model": "Golf",
+    "color": "vermelho tornado",
+    "year": 2018
+}
+###
+
+
+delete http://localhost:3003/cars/c002
+###
